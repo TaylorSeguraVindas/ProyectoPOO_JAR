@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="520.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="segura.taylor.controlador.interfaz.album.ControladorRegistroAlbum">
+    <children>
+        <VBox alignment="CENTER" prefHeight="73.0" prefWidth="663.0">
+            <children>
+                <Label fx:id="lblTitulo" prefHeight="122.0" prefWidth="148.0" text="Registro de Album" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox prefHeight="288.0" prefWidth="540.0" VBox.vgrow="ALWAYS">
+            <children>
+            <VBox prefHeight="256.0" prefWidth="358.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Imagen" />
+                        <ImageView fx:id="imagenFondo" fitHeight="130.0" fitWidth="275.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="btnSeleccionarImagen" mnemonicParsing="false" onAction="#seleccionarImagen" text="Seleccionar" />
+                     </children>
+                  </VBox>
+                        <Label text="Nombre" />
+                        <TextField fx:id="txtNombre" promptText="Nombre" />
+                        <Label text="Fecha de lanzamiento" />
+                  <DatePicker fx:id="txtFechaLanzamiento" prefHeight="25.0" prefWidth="745.0" />
+               </children>
+            </VBox>
+                <VBox alignment="CENTER" prefHeight="160.0" prefWidth="663.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="btnRegistrarModificar" mnemonicParsing="false" prefHeight="35.0" prefWidth="144.0" text="Registrar" />
+                        <Button fx:id="btnCerrar" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="34.0" prefWidth="144.0" text="Volver" />
+                    </children>
+                </VBox>
+            </children></VBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+    </padding>
+</VBox>

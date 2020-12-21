@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="692.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="segura.taylor.controlador.interfaz.tienda.ControladorInfoCancion">
+    <children>
+        <Button fx:id="btnVolver" mnemonicParsing="false" onAction="#volver" text="Volver">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" />
+            </VBox.margin>
+        </Button>
+        <VBox prefHeight="340.0" prefWidth="672.0" VBox.vgrow="ALWAYS">
+            <children>
+                <HBox prefHeight="247.0" prefWidth="672.0">
+                    <children>
+                        <VBox prefHeight="285.0" prefWidth="672.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label fx:id="lblNombre" prefHeight="72.0" prefWidth="409.0" text="Nombre cancion">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                        <Label fx:id="lblDuracion" layoutX="20.0" layoutY="52.0" prefHeight="54.0" prefWidth="546.0" text="Duración: 00:00" />
+                                <Label fx:id="lblFechaLanzamiento" layoutX="10.0" layoutY="20.0" prefHeight="54.0" prefWidth="546.0" text="Fecha lanzamiento: 01/01/2001" />
+                        <Label fx:id="lblGenero" layoutX="20.0" layoutY="64.0" prefHeight="54.0" prefWidth="546.0" text="Genero: desconocido" />
+                        <Label fx:id="lblArtista" layoutX="20.0" layoutY="81.0" prefHeight="54.0" prefWidth="546.0" text="Artista: desconocido" />
+                        <Label fx:id="lblCompositor" layoutX="20.0" layoutY="98.0" prefHeight="54.0" prefWidth="546.0" text="Compositor: desconocido" />
+                            </children>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="285.0" prefWidth="672.0" spacing="5.0">
+                     <children>
+                        <Label prefHeight="95.0" prefWidth="326.0" text="Calificación">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCalificacion" layoutX="20.0" layoutY="52.0" prefHeight="54.0" prefWidth="546.0" text="Promedio: 4.8" />
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="lblMiCalificacion" text="Mi calificación" />
+                              <ComboBox fx:id="txtMiCalificacion" prefHeight="25.0" prefWidth="326.0" promptText="Calificación" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+                    </children>
+                </HBox>
+            <Region prefHeight="111.0" prefWidth="672.0" VBox.vgrow="ALWAYS" />
+                    <HBox alignment="CENTER" prefHeight="76.0" prefWidth="672.0" spacing="10.0">
+                        <children>
+                  <Label fx:id="lblPrecio" text="Precio: 0.00">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                            <Region prefHeight="22.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                            <Button fx:id="btnComprar" mnemonicParsing="false" onAction="#comprarCancion" prefHeight="40.0" prefWidth="138.0" text="Comprar" />
+                        </children>
+                        <padding>
+                            <Insets left="10.0" right="10.0" />
+                        </padding>
+                    </HBox>
+            </children>
+            <VBox.margin>
+                <Insets left="10.0" right="10.0" />
+            </VBox.margin>
+        </VBox>
+    </children>
+    <padding>
+        <Insets top="10.0" />
+    </padding>
+</VBox>

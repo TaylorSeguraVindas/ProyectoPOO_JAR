@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="364.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="segura.taylor.controlador.interfaz.pais.ControladorRegistroPais">
+    <children>
+        <VBox alignment="CENTER" prefHeight="51.0" prefWidth="546.0">
+            <children>
+                <Label fx:id="lblTitulo" text="Registro de País" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox prefHeight="288.0" prefWidth="540.0" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox prefHeight="251.0" prefWidth="272.0">
+                    <children>
+                        <Label text="Nombre" />
+                        <TextField fx:id="txtNombre" promptText="Nombre" />
+                        <Label layoutX="10.0" layoutY="10.0" text="Descripción" />
+                        <TextArea fx:id="txtDescripcion" prefHeight="154.0" prefWidth="540.0" />
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets bottom="10.0" />
+                    </padding>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="125.0" prefWidth="540.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="btnRegistrarModificar" mnemonicParsing="false" prefHeight="35.0" prefWidth="144.0" text="Registrar" />
+                        <Button fx:id="btnCerrar" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="34.0" prefWidth="144.0" text="Volver" />
+                    </children>
+                </VBox>
+            </children></VBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+    </padding>
+</VBox>

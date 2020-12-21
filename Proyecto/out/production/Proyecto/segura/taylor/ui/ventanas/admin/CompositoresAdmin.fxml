@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="ventanaPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="320.0" minWidth="640.0" prefHeight="441.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="segura.taylor.controlador.interfaz.admin.ControladorCompositoresAdmin">
+    <children>
+        <VBox alignment="CENTER" prefHeight="53.0" prefWidth="640.0">
+            <children>
+                <Label text="Compositores">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="316.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+            <children>
+                <HBox alignment="TOP_RIGHT" minHeight="32.0" prefWidth="640.0">
+                    <children>
+                        <TextField fx:id="txtBusqueda" prefHeight="32.0" prefWidth="214.0" promptText="Buscar" />
+                        <Button fx:id="btnBuscar" layoutX="532.0" layoutY="10.0" mnemonicParsing="false" onAction="#buscar" prefHeight="32.0" prefWidth="61.0" text="Buscar" />
+                  <Region prefHeight="21.0" prefWidth="199.0" HBox.hgrow="ALWAYS" />
+
+                        <Button fx:id="btnAgregarCompositor" mnemonicParsing="false" onAction="#agregarCompositor" prefHeight="40.0" prefWidth="89.0" text="Agregar" />
+                        <Button fx:id="btnModificarCompositor" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#modificarCompositor" prefHeight="40.0" prefWidth="89.0" text="Modificar" />
+                        <Button fx:id="btnEliminarCompositor" layoutX="99.0" layoutY="10.0" mnemonicParsing="false" onAction="#eliminarCompositor" prefHeight="40.0" prefWidth="89.0" text="Eliminar" />
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+                <TableView fx:id="tblCompositores" minHeight="100.0" minWidth="640.0" prefWidth="734.0" VBox.vgrow="ALWAYS">
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy></TableView>
+            </children>
+        </VBox>
+    </children>
+</VBox>

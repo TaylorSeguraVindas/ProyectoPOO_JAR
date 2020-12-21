@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="65.0" prefWidth="600.0">
+         <children>
+            <Label text="Ingresar método de pago">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox prefHeight="175.0" prefWidth="516.0">
+         <children>
+            <Label layoutX="10.0" layoutY="10.0" text="Número de la tarjeta" />
+            <TextField fx:id="txtNumeroTarjeta" layoutX="10.0" layoutY="27.0" maxHeight="32.0" minHeight="32.0" prefHeight="32.0" prefWidth="436.0" promptText="xxxx-xxxx-xxxx-xxxx">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></TextField>
+            <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="436.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="50.0" prefWidth="145.0">
+                     <children>
+                        <Label text="Fecha de vencimiento">
+                           <padding>
+                              <Insets bottom="2.0" />
+                           </padding></Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="145.0" spacing="5.0">
+                           <children>
+                              <TextField fx:id="txtMes" maxHeight="32.0" minHeight="32.0" prefHeight="32.0" prefWidth="61.0" promptText="MM" />
+                              <Label text="/">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtAnno" maxHeight="32.0" minHeight="32.0" prefHeight="32.0" prefWidth="61.0" promptText="yyyy" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="153.0" layoutY="10.0" prefHeight="148.0" prefWidth="129.0">
+                     <children>
+                        <Label text="Código de seguridad">
+                           <VBox.margin>
+                              <Insets bottom="2.0" />
+                           </VBox.margin></Label>
+                        <TextField fx:id="txtCSV" maxHeight="32.0" minHeight="32.0" prefHeight="32.0" prefWidth="60.0" promptText="xxx" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="40.0" right="40.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="100.0" prefWidth="516.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnAceptar" mnemonicParsing="false" prefHeight="45.0" prefWidth="161.0" text="Aceptar" />
+            <Button fx:id="btnVolver" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="161.0" text="Volver" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

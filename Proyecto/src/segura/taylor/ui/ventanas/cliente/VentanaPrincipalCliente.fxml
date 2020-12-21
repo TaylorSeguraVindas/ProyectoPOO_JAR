@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="520.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="segura.taylor.controlador.interfaz.cliente.ControladorVentanaPrincipalCliente">
+   <children>
+      <HBox prefHeight="357.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="444.0" prefWidth="180.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#mostrarTienda" prefHeight="36.0" prefWidth="182.0" text="Tienda" />
+                        <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#mostrarBiblioteca" prefHeight="36.0" prefWidth="182.0" text="Mi biblioteca" />
+                        <Button layoutX="10.0" layoutY="120.0" mnemonicParsing="false" onAction="#modificarUsuario" prefHeight="36.0" prefWidth="182.0" text="Modificar perfil" />
+                     </children>
+                     <padding>
+                        <Insets top="40.0" />
+                     </padding>
+                  </VBox>
+                  <Label text="Mis listas de reproduccion">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="8.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ListView fx:id="listListaReproduccion" prefHeight="168.0" prefWidth="180.0" VBox.vgrow="ALWAYS" />
+                  <HBox prefHeight="7.0" prefWidth="180.0">
+                     <children>
+                        <Button layoutX="127.0" layoutY="10.0" mnemonicParsing="false" onAction="#modificarListaReproduccion" prefHeight="32.0" prefWidth="160.0" text="Modificar" />
+                        <Button mnemonicParsing="false" onAction="#removerListaReproduccion" prefHeight="32.0" prefWidth="112.0" text="Remover" />
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#crearListaReproduccion" prefHeight="42.0" prefWidth="180.0" text="Nueva lista" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox>
+                     <children>
+                        <Region prefHeight="0.0" prefWidth="655.0" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#cerrarSesion" text="Cerrar sesion" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <VBox fx:id="contenedorPrincipal" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </children></HBox>
+      <HBox prefHeight="51.0" prefWidth="920.0">
+         <children>
+            <VBox prefHeight="53.0" prefWidth="152.0">
+               <children>
+                  <Label fx:id="lblNombreCancion" text="Cancion" />
+                  <Label fx:id="lblNombreArtista" text="Artista" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="48.0" prefWidth="363.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="213.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onCancionAnteriorPressed" text="&lt;" />
+                        <Button fx:id="btnPausaReproducir" mnemonicParsing="false" onAction="#onPausaReproducirPressed" text="Play" />
+                        <Button mnemonicParsing="false" onAction="#onSiguienteCancionPressed" text="&gt;" />
+                     </children>
+                  </HBox>
+                  <VBox alignment="BOTTOM_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="00:00" />
+                        <Slider />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="53.0" prefWidth="151.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="105.0" text="Volumen" />
+                  <Slider />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding></VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

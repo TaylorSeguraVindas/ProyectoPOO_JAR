@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="440.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="segura.taylor.controlador.interfaz.artista.ControladorRegistroArtista">
+    <children>
+        <VBox alignment="CENTER" prefHeight="51.0" prefWidth="546.0">
+            <children>
+                <Label fx:id="lblTitulo" text="Registro de artista" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox VBox.vgrow="ALWAYS">
+            <children>
+                <HBox prefHeight="276.0" prefWidth="546.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <VBox prefHeight="251.0" prefWidth="272.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Nombre" />
+                                <TextField fx:id="txtNombre" promptText="Nombre" />
+                                <Label layoutX="10.0" layoutY="10.0" text="Apellidos" />
+                                <TextField fx:id="txtApellidos" layoutX="10.0" layoutY="10.0" promptText="Apellidos" />
+                                <Label layoutX="10.0" layoutY="52.0" text="Nombre artístico" />
+                                <TextField fx:id="txtNombreArtistico" layoutX="10.0" layoutY="35.0" promptText="Nombre artistico" />
+                                <Label layoutX="10.0" layoutY="94.0" text="Género" />
+                        <ComboBox fx:id="txtGenero" layoutX="10.0" layoutY="170.0" prefHeight="25.0" prefWidth="270.0" promptText="Seleccione género" />
+                                <Label layoutX="10.0" layoutY="136.0" text="Pais" />
+                                <ComboBox fx:id="txtPais" prefHeight="25.0" prefWidth="270.0" promptText="Seleccione país" />
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="278.0" prefWidth="267.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label layoutX="10.0" layoutY="10.0" text="Fecha de nacimiento" />
+                                <DatePicker fx:id="txtFechaNacimiento" prefHeight="25.0" prefWidth="299.0" promptText="Fecha de nacimiento" VBox.vgrow="ALWAYS" />
+                        <Label layoutX="10.0" layoutY="52.0" text="Fecha defuncion" />
+                        <DatePicker fx:id="txtFechaDefuncion" layoutX="10.0" layoutY="69.0" prefHeight="25.0" prefWidth="299.0" promptText="Fecha defuncion" />
+                                <Label text="Descripción" />
+                        <TextArea fx:id="txtDescripcion" prefHeight="109.0" prefWidth="263.0" promptText="Descripcion" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <VBox alignment="CENTER" prefHeight="80.0" prefWidth="540.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="btnRegistrarModificar" mnemonicParsing="false" prefHeight="35.0" prefWidth="144.0" text="Registrar" />
+                        <Button fx:id="btnCerrar" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="34.0" prefWidth="144.0" text="Volver" />
+                    </children>
+                </VBox>
+            </children></VBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+    </padding>
+</VBox>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox minHeight="520.0" minWidth="920.0" prefHeight="520.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="segura.taylor.controlador.interfaz.admin.ControladorVentanaPrincipalAdmin">
+    <children>
+        <HBox prefHeight="357.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox prefHeight="444.0" prefWidth="169.0">
+                    <children>
+                        <VBox minWidth="170.0" prefHeight="444.0" prefWidth="287.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Button fx:id="btnMostrarTienda" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#mostrarTienda" prefHeight="36.0" prefWidth="182.0" text="Tienda" />
+                        <Button fx:id="btnMostrarUsuarios" layoutX="10.0" layoutY="225.0" mnemonicParsing="false" onAction="#mostrarUsuarios" prefHeight="36.0" prefWidth="182.0" text="Usuarios" />
+                        <Button fx:id="btnMostrarAlbunes" layoutX="10.0" layoutY="120.0" mnemonicParsing="false" onAction="#mostrarAlbunes" prefHeight="36.0" prefWidth="182.0" text="Albunes" />
+                        <Button fx:id="btnMostrarArtistas" layoutX="10.0" layoutY="155.0" mnemonicParsing="false" onAction="#mostrarArtistas" prefHeight="36.0" prefWidth="182.0" text="Artistas" />
+                        <Button fx:id="btnMostrarCompositores" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#mostrarCompositores" prefHeight="36.0" prefWidth="182.0" text="Compositores" />
+                        <Button fx:id="btnMostrarGeneros" mnemonicParsing="false" onAction="#mostrarGeneros" prefHeight="36.0" prefWidth="182.0" text="Géneros" />
+                        <Button fx:id="btnMostrarCanciones" layoutX="10.0" layoutY="225.0" mnemonicParsing="false" onAction="#mostrarCanciones" prefHeight="36.0" prefWidth="182.0" text="Canciones" />
+                                <Button fx:id="btnMostrarListasReproduccion" mnemonicParsing="false" onAction="#mostrarListasReproduccion" prefHeight="36.0" prefWidth="182.0" text="Listas de reproduccion" />
+                        <Button fx:id="btnMostrarListasReproduccion1" layoutX="10.0" layoutY="330.0" mnemonicParsing="false" onAction="#mostrarPaises" prefHeight="36.0" prefWidth="182.0" text="Paises" />
+                        <Button fx:id="btnModificarAdmin" mnemonicParsing="false" onAction="#modificarAdmin" prefHeight="36.0" prefWidth="182.0" text="Ajustes Admin" />
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" top="46.0" />
+                            </padding>
+                        </VBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox>
+                            <children>
+                                <Region prefHeight="0.0" prefWidth="655.0" HBox.hgrow="ALWAYS" />
+                                <Button mnemonicParsing="false" onAction="#cerrarSesion" text="Cerrar sesion" />
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" top="10.0" />
+                            </padding>
+                        </HBox>
+                        <VBox fx:id="contenedorPrincipal" alignment="TOP_CENTER" minHeight="360.0" minWidth="720.0" prefHeight="400.0" prefWidth="720.0" style="-fx-background-color: ECECEC;" VBox.vgrow="ALWAYS" />
+                    </children>
+                </VBox>
+            </children></HBox>
+        <HBox minHeight="76.0" minWidth="600.0" prefHeight="51.0" prefWidth="920.0">
+            <children>
+                <VBox prefHeight="53.0" prefWidth="152.0">
+                    <children>
+                        <Label fx:id="lblNombreCancion" text="Cancion" />
+                        <Label fx:id="lblNombreArtista" text="Artista" />
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                    <padding>
+                        <Insets left="10.0" right="10.0" />
+                    </padding>
+                </VBox>
+                <VBox prefHeight="48.0" prefWidth="363.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="213.0">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#onCancionAnteriorPressed" text="&lt;" />
+                                <Button fx:id="btnPausaReproducir" mnemonicParsing="false" onAction="#onPausaReproducirPressed" text="Play" />
+                                <Button mnemonicParsing="false" onAction="#onSiguienteCancionPressed" text="&gt;" />
+                            </children>
+                        </HBox>
+                        <VBox alignment="BOTTOM_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                            <children>
+                                <Label text="00:00" />
+                                <Slider />
+                            </children>
+                        </VBox>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" />
+                    </padding>
+                </VBox>
+                <VBox alignment="BOTTOM_LEFT" prefHeight="53.0" prefWidth="151.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="105.0" text="Volumen" />
+                        <Slider />
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" />
+                    </padding></VBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+        </HBox>
+    </children>
+</VBox>

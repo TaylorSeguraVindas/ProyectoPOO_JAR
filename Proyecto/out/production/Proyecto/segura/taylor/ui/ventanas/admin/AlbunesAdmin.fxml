@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="ventanaPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="320.0" minWidth="680.0" prefHeight="497.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="segura.taylor.controlador.interfaz.admin.ControladorAlbunesAdmin">
+    <children>
+        <VBox alignment="CENTER" prefHeight="53.0" prefWidth="640.0">
+            <children>
+                <Label text="Albunes">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="316.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+            <children>
+            <SplitPane dividerPositions="0.4968394437420986" prefHeight="160.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+              <items>
+                  <VBox prefHeight="444.0" prefWidth="460.0">
+                     <children>
+                            <HBox alignment="TOP_RIGHT" minHeight="32.0" prefWidth="640.0" spacing="10.0">
+                                <children>
+                                    <Button fx:id="btnAgregarAlbum" mnemonicParsing="false" onAction="#agregarAlbum" prefHeight="40.0" prefWidth="89.0" text="Agregar" />
+                                    <Button fx:id="btnModificarAlbum" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#modificarAlbum" prefHeight="40.0" prefWidth="89.0" text="Modificar" />
+                                    <Button fx:id="btnEliminarAlbum" layoutX="99.0" layoutY="10.0" mnemonicParsing="false" onAction="#eliminarAlbum" prefHeight="40.0" prefWidth="89.0" text="Eliminar" />
+                                </children>
+                                <VBox.margin>
+                                    <Insets />
+                                </VBox.margin>
+                            </HBox>
+                            <TableView fx:id="tblAlbunes" minHeight="100.0" minWidth="300.0" prefWidth="734.0" VBox.vgrow="ALWAYS">
+                                <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <SplitPane dividerPositions="0.49321266968325794" orientation="VERTICAL" prefHeight="284.0" prefWidth="326.0">
+                    <items>
+                        <VBox prefHeight="220.0" prefWidth="493.0">
+                           <children>
+                              <HBox alignment="TOP_RIGHT" minHeight="32.0" spacing="10.0">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="81.0" text="Artistas" />
+                                    <Region prefHeight="32.0" prefWidth="162.0" HBox.hgrow="ALWAYS" />
+                                    <Button fx:id="btnAgregaArtista" mnemonicParsing="false" onAction="#agregarArtista" prefHeight="40.0" prefWidth="89.0" text="Agregar" />
+                                    <Button fx:id="btnRemoverArtista" layoutX="99.0" layoutY="10.0" mnemonicParsing="false" onAction="#removerArtista" prefHeight="40.0" prefWidth="89.0" text="Remover" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <TableView fx:id="tblArtistas" minHeight="100.0" minWidth="300.0" prefHeight="167.0" prefWidth="395.0" VBox.vgrow="ALWAYS">
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="188.0" prefWidth="380.0">
+                           <children>
+                              <HBox alignment="TOP_RIGHT" minHeight="32.0" prefHeight="60.0" prefWidth="395.0" spacing="10.0">
+                                 <children>
+                                    <Label prefHeight="40.0" prefWidth="91.0" text="Canciones" />
+                                    <Region prefHeight="32.0" prefWidth="149.0" HBox.hgrow="ALWAYS" />
+                                    <Button fx:id="btnAgregarCancion" mnemonicParsing="false" onAction="#agregarCancion" prefHeight="40.0" prefWidth="89.0" text="Agregar" />
+                                    <Button fx:id="btnRemoverCancion" layoutX="99.0" layoutY="10.0" mnemonicParsing="false" onAction="#removerCancion" prefHeight="40.0" prefWidth="89.0" text="Remover" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <TableView fx:id="tblCanciones" minHeight="100.0" minWidth="300.0" prefHeight="202.0" prefWidth="395.0" VBox.vgrow="ALWAYS">
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </VBox>
+                    </items>
+                  </SplitPane>
+              </items>
+            </SplitPane>
+            </children>
+        </VBox>
+    </children>
+</VBox>

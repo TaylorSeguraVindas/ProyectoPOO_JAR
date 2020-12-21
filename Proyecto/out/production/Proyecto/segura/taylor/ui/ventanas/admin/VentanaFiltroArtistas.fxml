@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="219.0" prefWidth="307.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="CENTER" prefHeight="60.0" prefWidth="600.0">
+            <children>
+                <Label text="Filtros">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox prefHeight="131.0" prefWidth="307.0" spacing="10.0">
+            <children>
+                <CheckBox fx:id="chbFiltroNombre" mnemonicParsing="false" text="Filtrar por nombre" />
+                <CheckBox fx:id="chbFiltroAlias" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Filtrar por nombre artístico" />
+                <CheckBox fx:id="chbFiltroNacionalidad" layoutX="10.0" layoutY="27.0" mnemonicParsing="false" text="Filtrar por nacionalidad" />
+            </children>
+            <padding>
+                <Insets left="20.0" top="20.0" />
+            </padding>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="101.0" prefWidth="307.0">
+            <children>
+                <Button fx:id="btnVolver" mnemonicParsing="false" prefHeight="45.0" prefWidth="129.0" text="Volver" />
+            </children>
+        </VBox>
+    </children>
+</VBox>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="83.0" prefWidth="446.0">
+         <children>
+            <Label text="Cambiar contraseña">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox>
+         <children>
+            <Label text="Contraseña actual" />
+            <PasswordField fx:id="txtContrasennaActual" promptText="Contraseña actual">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Label layoutX="10.0" layoutY="10.0" text="Nueva contraseña" />
+            <PasswordField fx:id="txtContrasennaNueva" layoutX="10.0" layoutY="27.0" promptText="Nueva contraseña" />
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Button fx:id="btnActualizar" mnemonicParsing="false" prefHeight="49.0" prefWidth="161.0" text="Actualizar" />
+            <Button fx:id="btnVolver" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="161.0" text="Volver" />
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

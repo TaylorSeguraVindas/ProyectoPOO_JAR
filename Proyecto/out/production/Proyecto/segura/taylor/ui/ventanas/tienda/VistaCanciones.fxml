@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="ventanaPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="320.0" minWidth="640.0" prefHeight="441.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="segura.taylor.controlador.interfaz.tienda.ControladorVistaCanciones">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="316.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+            <children>
+                <HBox alignment="TOP_RIGHT" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="734.0">
+                    <children>
+                  <TextField fx:id="txtBusqueda" prefHeight="36.0" prefWidth="228.0" promptText="Buscar" />
+                  <Button fx:id="btnBuscar" layoutX="499.0" layoutY="10.0" mnemonicParsing="false" onAction="#buscar" prefHeight="30.0" prefWidth="63.0" text="Buscar" />
+                  <Button fx:id="btnFiltros" layoutX="587.0" layoutY="10.0" mnemonicParsing="false" onAction="#abrirFiltros" prefHeight="36.0" prefWidth="59.0" text="Filtros" />
+                  <Region prefHeight="36.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="btnInfoDetalladaCancion" layoutX="457.0" layoutY="10.0" mnemonicParsing="false" onAction="#abrirInfoDetallada" prefHeight="36.0" prefWidth="116.0" text="Abrir seleccionada" />
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+                <TableView fx:id="tblCanciones" minHeight="100.0" minWidth="640.0" prefHeight="366.0" prefWidth="734.0" VBox.vgrow="ALWAYS">
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy></TableView>
+            </children>
+        </VBox>
+    </children>
+</VBox>

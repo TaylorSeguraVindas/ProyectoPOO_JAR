@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="segura.taylor.controlador.interfaz.artista.ControladorAgregarArtistaALista">
+    <children>
+        <VBox alignment="CENTER" prefHeight="58.0" prefWidth="600.0">
+            <children>
+                <Label text="Agregar artista a lista">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox prefHeight="109.0" prefWidth="306.0">
+                    <children>
+                        <Label text="Artista" />
+                        <ComboBox fx:id="txtArtista" prefHeight="25.0" prefWidth="644.0" promptText="Seleccione un artista" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="btnAceptar" mnemonicParsing="false" prefHeight="50.0" prefWidth="126.0" text="Aceptar" />
+                        <Button fx:id="btnVolver" layoutX="100.0" layoutY="39.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="126.0" text="Volver" />
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="10.0" right="10.0" />
+            </padding>
+        </VBox>
+    </children>
+</VBox>
